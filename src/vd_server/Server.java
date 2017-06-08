@@ -120,9 +120,6 @@ public class Server {
 
         sockChannel.read(buf, sockChannel, new CompletionHandler<Integer, AsynchronousSocketChannel>() {
 
-            /**
-             * some message is read from client, this callback will be called
-             */
             @Override
             public void completed(Integer result, AsynchronousSocketChannel channel) {
                 if (result != -1) {
